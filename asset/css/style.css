@@ -1,9 +1,10 @@
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    background-color: #BBBBBB;
+    background-image: url(https://th.bing.com/th/id/OIP.MSH9ZbCC0CHfnWnjVYJSqgHaDh?rs=1&pid=ImgDetMain);
     padding: 20px 0;
 }
 
@@ -21,7 +22,7 @@ nav{
 
 nav li{
     display: inline;
-    margin: 0 0 0 15px;
+    margin: 0 0 0 25px;
 }
 
 nav a{
@@ -37,11 +38,9 @@ nav a:hover{
     text-decoration: underline;
 }
 
-
-
 footer{
     text-align: center;
-    background: url(imagenes/bg.jpg);
+    background: url(../img/bg.jpg);
     padding:20px;
 }
 
