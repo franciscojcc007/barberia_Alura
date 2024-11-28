@@ -1,4 +1,4 @@
-/* Formulario */
+
 form {
     margin: 40px auto;
     width: 90%;
@@ -33,6 +33,16 @@ form label, form legend {
     box-shadow: 0 0 4px rgba(199, 140, 25, 0.7);
     outline: none;
 }
+select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
 
 .checkbox {
     margin: 20px 0;
@@ -59,7 +69,37 @@ form label, form legend {
     transform: scale(1.05);
 }
 
-/* Estilo para la tabla */
+#tabla-preferencias {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tabla-preferencias th,
+#tabla-preferencias td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabla-preferencias th {
+    background-color: #333333;
+    font-weight: bold;
+}
+
+table th,
+table td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+    text-align: center; 
+}
+
+
 table {
     margin: 40px auto;
     width: 80%;
@@ -85,7 +125,13 @@ td {
 th {
     background-color: #444;
 }
-/* Media Queries */
+
+
+input:valid, textarea:valid {
+    border-color: green;
+}
+
+
 @media screen and (max-width: 480px) {
     header {
         text-align: center;
