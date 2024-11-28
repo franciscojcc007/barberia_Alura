@@ -17,7 +17,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicio.html">Productos</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
@@ -25,37 +25,65 @@
   </header>
   <main>
     <form>
-      <label for="nombreapellido">Nombre y Apellido</label>
-      <input type="text" id="nombreapellido" class="input-padron" required>
+      <label for="nombreApellido">Nombre y Apellido</label>
+      <input type="text" id="nombreapellido" class="input-padron" required minlength="3" maxlength="50">
       <label for="correoelectronico">Correo Electrónico</label>
       <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
       <label for="telefono">Teléfono</label>
-      <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+      <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX" >
       <label for="mensaje">Mensaje</label>
-      <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+      <textarea cols="70" rows="10" id="mensaje" class="input-padron" required  minlength="10" maxlength="500"></textarea>
       <fieldset>
         <legend>¿Cómo le gustaría que lo contactemos?</legend>
         <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
-
         <label for="radio-telefono"><input type="radio" name="contacto" value="teléfono"
             id="radio-telefono">Teléfono</label>
-
         <label for="radio-whatsapp"><input type="radio" name="contacto" value="WhatsApp" id="radio-whatsapp"
             checked>WhatsApp</label>
-
       </fieldset>
       <fieldset>
         <legend>¿En cuál horario prefiere ser atendido?</legend>
-        <select>
-          <option>Mañana</option>
-          <option>Tarde</option>
-          <option>Noche</option>
+        <select required>
+          <option value="" disabled selected>Seleccione un horario</option>
+          <option value="mañana">Mañana</option>
+          <option value="tarde">Tarde</option>
+          <option value="noche">Noche</option>
         </select>
+        <fieldset>
+          <legend>¿En qué día prefiere ser atendido?</legend>
+          <select id="dia-preferido" name="dia-preferido" required>
+            <option value="" disabled selected>Seleccione un día</option>
+            <option value="lunes">Lunes</option>
+            <option value="martes">Martes</option>
+            <option value="miércoles">Miércoles</option>
+            <option value="jueves">Jueves</option>
+            <option value="viernes">Viernes</option>
+            <option value="sábado">Sábado</option>
+            <option value="domingo">Domingo</option>
+          </select>
+        </fieldset>
       </fieldset>
       <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería
         Alura?</label>
       <input type="submit" value="Enviar formulario" class="enviar">
     </form>
+    <div style="text-align: center;">
+    <table id="tabla-preferencias">
+      <thead>
+        <tr>
+          <th>Nombre y Apellido</th>
+          <!-- <th>Correo Electrónico</th> -->
+          <!-- <th>Teléfono</th> -->
+          <th>Mensaje</th>
+          <th>Día Preferido</th>
+          <th>Horario Preferido</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- filas llenada-->
+      </tbody>
+    </table>
+    
     <table>
       <thead>
         <tr>
@@ -94,11 +122,13 @@
         </tr>
       </tbody>
     </table>
+  </div>
   </main>
   <footer>
     <img src="./asset/img/logo-blanco.png" alt="Logo de la Barbería Alura">
     <p class="copyright">&copy Copyright Barbería Alura - 2023</p>
   </footer>
+  <script src="./asset/js/validation-contact.js"></script>
 </body>
 
 </html>
