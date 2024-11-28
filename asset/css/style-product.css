@@ -4,6 +4,9 @@
     padding: 50px;
 }
 
+.productos a{
+    color: #000000;
+}
 
 .productos li{
     display: inline-block;
@@ -30,9 +33,9 @@
     font-weight: bold;
 }
 
-.productos li:hover h2{
-    /* font-size: 33px; */
-}
+/* .productos li:hover h2{
+    font-size: 33px;
+} */
 
 .producto-descripcion{
     font-size: 18px;
@@ -42,4 +45,13 @@
     font-size: 20px;
     font-weight: bold;
     margin-top:10px;
+}
+
+.motivar-click{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+.motivar-click:hover{
+    /* font-size: 1.3rem; */
+    color: #088c19;
 }
