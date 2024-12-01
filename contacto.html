@@ -25,14 +25,14 @@
   </header>
   <main>
     <form>
-      <label for="nombreApellido">Nombre y Apellido</label>
-      <input type="text" id="nombreapellido" class="input-padron" required minlength="3" maxlength="50">
-      <label for="correoelectronico">Correo Electrónico</label>
-      <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+      <label for="nombreapellido">Nombre y Apellido</label>
+      <input type="text" name="nombreapellido" id="nombreapellido" class="input-padron" required minlength="3" maxlength="50">
+      <label for="correo">Correo Electrónico</label>
+      <input type="email" id="correo" name="correo" class="input-padron" required placeholder="email@dominio.com">
       <label for="telefono">Teléfono</label>
-      <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX" >
+      <input type="tel" id="telefono" name="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX" >
       <label for="mensaje">Mensaje</label>
-      <textarea cols="70" rows="10" id="mensaje" class="input-padron" required  minlength="10" maxlength="500"></textarea>
+      <textarea cols="70" rows="10" id="mensaje" class="input-padron" name="mensaje" required  minlength="10" maxlength="500"></textarea>
       <fieldset>
         <legend>¿Cómo le gustaría que lo contactemos?</legend>
         <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
@@ -65,7 +65,7 @@
       </fieldset>
       <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería
         Alura?</label>
-      <input type="submit" value="Enviar formulario" class="enviar">
+      <input type="submit" id="submit" value="Enviar formulario" class="enviar">
     </form>
     <div style="text-align: center;">
     <table id="tabla-preferencias">
