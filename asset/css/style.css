@@ -1,31 +1,44 @@
-
-body{
+body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background-image: url(https://th.bing.com/th/id/OIP.MSH9ZbCC0CHfnWnjVYJSqgHaDh?rs=1&pid=ImgDetMain);
     padding: 20px 0;
+    background-position: center;
 }
 
-.caja{
-    width: 940px;
+.caja {
+    width: 90%;
+    max-width: 940px;
     position: relative;
     margin: 0 auto;
 }
 
-nav{
+nav {
     position: absolute;
-    top:110px;
+    top: 110px;
     right: 0;
+    width: 100%;
+    text-align: right;
 }
 
-nav li{
-    display: inline;
-    margin: 0 0 0 25px;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
-nav a{
+nav li {
+    margin: 10px;
+}
+
+nav a {
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
@@ -33,37 +46,47 @@ nav a{
     text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
     color: #c78c19;
     text-decoration: underline;
 }
 
-footer{
+footer {
     text-align: center;
     background: url(../img/bg.jpg);
-    padding:20px;
+    padding: 20px;
+    color: #FFFFFF;
 }
 
-.copyright{
-    color:#FFFFFF;
+.copyright {
     font-size: 13px;
-    margin:20px;
+    margin: 20px;
 }
 
-
-@media screen and (max-width:480px){
-    h1{
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        top: 80px;
         text-align: center;
     }
-    nav{
-        position: static;
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
-    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
-        width: auto;
+    nav li {
+        margin: 5px 0;
     }
-    .lista-diferenciales, .imagen-diferenciales{
-        width: 100%;
+    nav a {
+        font-size: 18px;
     }
+}
 
+@media (max-width: 380px) {
+    nav a {
+        font-size: 16px;
+    }
+    .copyright {
+        font-size: 12px;
+    }
 }
 
