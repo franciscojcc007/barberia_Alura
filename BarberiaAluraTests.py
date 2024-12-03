@@ -10,17 +10,14 @@ class BarberiaAluraTests(unittest.TestCase):
   def setUpClass(cls):
     cls.driver = webdriver.Edge()
     cls.driver.maximize_window()
-    cls.base_url = "http://192.168.127.181:5500/index.html"
+    cls.base_url = "http://192.168.5.91:5500/index.html"
     if not os.path.exists("capturas"):
       os.makedirs("capturas")
   
   def setUp(self):
     self.driver.get(self.base_url)
-    
-    
 
   def take_screenshot(self, test_name):
-    """Guardar una captura de pantalla con el nombre del caso de prueba"""
     screenshot_path = f"capturas/{test_name}.png"
     self.driver.save_screenshot(screenshot_path)
     print(f"Captura guardada: {screenshot_path}")
@@ -36,12 +33,11 @@ class BarberiaAluraTests(unittest.TestCase):
     )
     enlaces = self.driver.find_elements(By.TAG_NAME, "a")
 
-    # Navegar por todos los enlace de mi pagina
     for i, enlace in enumerate(enlaces):
         enlace_actualizado = enlaces[i]  
         self.driver.execute_script("arguments[0].click();", enlace_actualizado)
         self.take_screenshot(f"pagina_{i}")
-        self.driver.back()  # Regresar
+        self.driver.back()  
         enlaces = self.driver.find_elements(By.TAG_NAME, "a")  
 
   
@@ -87,8 +83,7 @@ class BarberiaAluraTests(unittest.TestCase):
     ruta_archivo = os.path.abspath("C:\\Users\\francisco javier\\OneDrive\\Escritorio\\barberia_Alura\\contacto.html")
     url = f"file://{ruta_archivo}"
     self.driver.get(url)
-
-    # Completar los campos del formulario de contacto para realizar el vio
+    
     WebDriverWait(self.driver, 10).until(
         EC.presence_of_element_located((By.NAME, "nombreapellido"))
     ).send_keys("Prueba Nombre")
@@ -100,7 +95,6 @@ class BarberiaAluraTests(unittest.TestCase):
 
   @classmethod
   def tearDownClass(cls):
-    """Cerrar el navegador al finalizar todas las pruebas."""
     cls.driver.quit()
 
 if __name__ == "__main__":
