@@ -1,9 +1,9 @@
-### Barberia_Alura
+# Barberia_Alura
 
-# El objetivo de la página web es darse a conocer al público genera con una página profesional y responsiva, que sepa dónde estamos ubicado y se sienta atraída a visitar nuestra sucursal a recibir nuestro servicio y comprar diversos productos, que se vuelva cliente habituales, también recomiende y comparta la página para que nos conozca más personas.
+### El objetivo de la página web es darse a conocer al público genera con una página profesional y responsiva, que sepa dónde estamos ubicado y se sienta atraída a visitar nuestra sucursal a recibir nuestro servicio y comprar diversos productos, que se vuelva cliente habituales, también recomiende y comparta la página para que nos conozca más personas.
 
 
-# Alcance del proyecto:
+### Alcance del proyecto:
 Crea una página es ofrecer los servicios de una barbería, que el cliente se entere de ella, los servicios y producto que tiene también notificar los nuevos que se vallan incorporando.
 Esta tendrá los días y horarios que trabaja para más facilidad.
 La posibilidad de comunicarte con la barbería, agendar su cita y dale seguimiento constate al cliente.
