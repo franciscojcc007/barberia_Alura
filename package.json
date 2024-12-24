@@ -1,0 +1,21 @@
+{
+  "name": "barberia_alura",
+  "version": "1.0.0",
+  "description": "Crea una página es ofrecer los servicios de una barbería, que el cliente se entere de ella, los servicios y producto que tiene también notificar los nuevos que se vallan incorporando.\r Esta tendrá los días y horarios que trabaja para más facilidad.\r La posibilidad de comunicarte con la barbería, agendar su cita y dale seguimiento constate al cliente.\r La página será responsiva para tener mayor alcance así será más fácil recibir notificaciones y aviso de sus citas, servicio etc.\r Cosa que no se harán en la página compra y pagos en línea ya que los servicio estarán orientado a realizar en las sucursales, así como compra de producto y la atención personalizada.\r La página web solo estar en español ya que es tara orientado a cliente de la misma ciudad.\r La se ara app para móvil solo se ara la página web responsiva para su uso en móvil.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+      "start": "node index.js",
+      "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0"
+  },
+  "author": "Francisco Concepción",
+  "license": "ISC"
+}
