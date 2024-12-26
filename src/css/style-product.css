@@ -1,108 +1,110 @@
-.productos{
+.cards{
     width: 55%;
     margin: 0 auto;
     padding: 50px;
 }
 
-.productos a{
+.cards a{
     color: #000000;
 }
 
-.productos li{
+.cards li{
     display: inline-block;
     text-align: center;
     width: 30%;
     vertical-align: top;
-    margin: 0 1.5%;
+    margin: 10px 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
-    border: 2px solid #000000;
     border-radius: 10px;
+    transition: all 0.3s;
+    background-color: #f9f9f9;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.156);
+    cursor: pointer;
 }
 
-.productos li:hover{
+.cards li:hover{
     border-color:#c78c19;
 }
 
-.productos li:active{
+.cards li:active{
     border-color:#088c19;
 }
 .img{
     width: 100%;
 }
 
-
-.productos h2{
+.cards h2{
     font-size: 30px;
     font-weight: bold;
 }
 
-.producto-descripcion{
+.product-description{
     font-size: 18px;
 }
 
-.producto-precio{
+.product-price{
     font-size: 20px;
     font-weight: bold;
     margin-top:10px;
 }
 
-.motivar-click{
+.motivate-click{
     margin-top: 20px;
     font-size: 1.2rem;
 }
-.motivar-click:hover{
+.motivate-click:hover{
 
     color: #088c19;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .productos li {
+    .cards li {
         width: 45%; 
         margin: 10px 2.5%; 
     }
 
-    .productos h2 {
+    .cards h2 {
         font-size: 24px;
     }
 
-    .productos a{
+    .cards a{
         margin-top: 10px;
     }
 
-    .producto-descripcion {
+    .product-description {
         font-size: 16px; 
     }
 
-    .producto-precio {
+    .product-price {
         font-size: 18px; 
     }
 
-    .motivar-click {
+    .motivate-click {
         font-size: 1rem; 
     }
 }
 
 @media (max-width: 480px) {
-    .productos li {
+    .cards li {
         width: 100%; 
         margin: 10px 0; 
     }
 
-    .productos h2 {
+    .cards h2 {
         font-size: 20px; 
     }
 
-    .producto-descripcion {
+    .product-description {
         font-size: 14px; 
     }
 
-    .producto-precio {
+    .product-price {
         font-size: 16px; 
     }
 
-    .motivar-click {
+    .motivate-click {
         font-size: 0.9rem;  
     }
 }
