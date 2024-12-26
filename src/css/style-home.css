@@ -4,7 +4,7 @@
     object-fit: cover;
 }
 
-.principal {
+.main-content {
     padding: 3em 0;
     background: #FEFEFE;
     width: 90%;
@@ -12,60 +12,60 @@
     margin: 0 auto;
 }
 
-.titulo-principal {
+.title-main {
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em;
     clear: left;
 }
 
-.principal p {
+.main-content p {
     margin: 0 0 1em;
 }
 
-.principal strong {
+.main-content strong {
     font-weight: bold;
 }
 
-.principal em {
+.main-content em {
     font-style: italic;
 }
 
-.utensilios {
+.utensils {
     width: 100%;
     max-width: 135px;
     margin: 0 15px 15px 0;
     display: block;
 }
 
-.mapa {
+.map {
     padding: 3em 0;
     background: linear-gradient(#FEFEFE, #888888);
 }
 
-.mapa p {
+.map p {
     margin: 0 0 2em;
     text-align: center;
 }
 
-.mapa-contenido {
+.mapa-content {
     width: 90%;
     max-width: 940px;
     margin: 0 auto;
 }
 
-.diferenciales {
+.differentials {
     padding: 1.7em 0;
     background: #888888;
 }
 
-.contenido-diferenciales {
+.content-differentials {
     width: 90%;
     max-width: 640px;
     margin: 0 auto;
 }
 
-.lista-diferenciales {
+.lista-differentials {
     width: 100%;
     display: block; 
 }
@@ -82,7 +82,7 @@
     font-weight: bold;
 }
 
-.imagen-diferenciales {
+.img-differentials {
     width: 50%;
     transition: 400ms;
     box-shadow: 5px 10px 30px 10px #000000;
@@ -97,24 +97,24 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .principal {
+    .main-content {
         width: 95%;
     }
 
-    .utensilios {
+    .utensils {
         width: 100%;
         margin: 0 0 15px 0;
     }
 
-    .mapa-contenido {
+    .mapa-content {
         width: 95%;
     }
 
-    .contenido-diferenciales {
+    .content-differentials {
         width: 95%;
     }
 
-    .imagen-diferenciales {
+    .img-differentials {
         max-width: 100%;
     }
 
@@ -124,11 +124,11 @@
 }
 
 @media (max-width: 480px) {
-    .titulo-principal {
+    .title-main {
         font-size: 1.5em;
     }
 
-    .principal {
+    .main-content {
         padding: 2em 0;
     }
 
