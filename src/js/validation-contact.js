@@ -1,19 +1,19 @@
 document.querySelector("form").addEventListener("submit", function (e) {
-  const nombre = document.getElementById("nombreApellido").value.trim();
-  const mensaje = document.getElementById("mensaje").value.trim();
+  const $firsName = document.getElementById("first-name-surname").value.trim();
+  const $message = document.getElementById("mensaje").value.trim();
 
-  if (!nombre) {
+  if (!$firsName) {
     alert("Por favor, complete el campo de Nombre y Apellido.");
     e.preventDefault();
   }
 
-  if (!mensaje) {
+  if (!$message) {
     alert("El campo Mensaje no puede estar vacío.");
     e.preventDefault();
   }
 });
 
-const radios = document.querySelectorAll('input[name="contacto"]');
+const radios = document.querySelectorAll('input[name="contact"]');
 document.querySelector("form").addEventListener("submit", function (e) {
   let selected = false;
   radios.forEach((radio) => {
@@ -21,7 +21,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
   });
 
   if (!selected) {
-    alert("Seleccione un método de contacto.");
+    alert("Seleccione un método de contact.");
     e.preventDefault();
   }
 });
@@ -31,32 +31,4 @@ document.querySelector("form").addEventListener("submit", function (e) {
     alert("Por favor, complete todos los campos correctamente.");
     e.preventDefault();
   }
-});
-
-const form = document.querySelector("form");
-const tabla = document
-  .getElementById("tabla-preferencias")
-  .querySelector("tbody");
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const nombreApellido = document.getElementById("nombreapellido").value;
-  // const correoElectronico = document.getElementById("correoelectronico").value;
-  // const telefono = document.getElementById("telefono").value;
-  const mensaje = document.getElementById("mensaje").value;
-  const diaPreferido = document.getElementById("dia-preferido").value;
-  const horarioPreferido = document.querySelector("select").value;
-
-  // Crear una fila
-  const nuevaFila = document.createElement("tr");
-  nuevaFila.innerHTML = `
-    <td>${nombreApellido}</td>
-    <td>${mensaje}</td>
-    <td>${diaPreferido}</td>
-    <td>${horarioPreferido}</td>
-    `;
-  tabla.appendChild(nuevaFila);
-  form.reset();
-  alert("¡La preferencia ha sido registrada!");
 });
