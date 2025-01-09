@@ -59,15 +59,10 @@ form legend {
     transform: scale(1.05);
 }
 
-.div-table {
-    text-align: center;
-}
-
 input:valid,
 textarea:valid {
     border-color: green;
 }
-
 
 @media screen and (max-width: 480px) {
     header {
@@ -87,16 +82,3 @@ textarea:valid {
         font-size: 16px;
     }
 }
-
-
-.iti {
-    width: 100%;
-}
-
-.iti__flag {
-    background-size: cover;
-}
-
-/* .iti--separate-dial-code .iti__flag-container {
-    padding-right: 10px;
-} */
