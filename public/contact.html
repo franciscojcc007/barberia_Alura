@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../src/css/reset.css">
   <link rel="stylesheet" href="../src/css/style.css">
   <link rel="stylesheet" href="../src/css/style-contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
 </head>
 
 <body>
@@ -19,74 +20,34 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="service.html">Productos</a></li>
-          <li><a href="contact.html">contact</a></li>
+          <li><a href="contact.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
     <form>
-      <label for="first-name-surname">Nombre y Apellido</label>
-      <input type="text" name="first-name-surname" id="first-name-surname" class="input-padron" required minlength="3" maxlength="50">
-      <label for="correo">Correo Electrónico</label>
-      <input type="email" id="correo" name="correo" class="input-padron" required placeholder="email@dominio.com">
-      <label for="telefono">Teléfono</label>
-      <input type="tel" id="telefono" name="telefono" class="input-padron" required placeholder="(XXX) XXX XXXX" >
-      <label for="mensaje">Mensaje</label>
-      <textarea cols="70" rows="10" id="mensaje" class="input-padron" name="mensaje" required  minlength="10" maxlength="500"></textarea>
-      <fieldset>
-        <legend>¿Cómo le gustaría que lo contactemos?</legend>
-        <label for="radio-email"><input type="radio" name="contact" value="email" id="radio-email">Email</label>
-        <label for="radio-whatsapp"><input type="radio" name="contact" value="WhatsApp" id="radio-whatsapp" checked>WhatsApp</label>
-      </fieldset>
-      <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería Alura?</label>
+      <label for="firstName">Nombre<span>*</span></label>
+      <input type="text" name="firstName" id="firstName" class="input-padron" required minlength="3" maxlength="50">
+      <label for="surname">Apellido<span>*</span></label>
+      <input type="text" name="surname" id="surname" class="input-padron" required minlength="3" maxlength="50">
+      <label for="email">Correo Electrónico<span>*</span></label>
+      <input type="email" id="email" name="email" class="input-padron" required placeholder="email@dominio.com">
+      <label for="phone">Teléfono<span>*</span></label>
+      <input type="tel" id="phone" name="phone" class="input-padron" required>
+      <label for="message">Mensaje</label>
+      <textarea cols="70" rows="10" id="message" class="input-padron" name="message" minlength="10" maxlength="500"></textarea>
+      <label class="checkbox"><input type="checkbox"> ¿Le gustaría recibir novedades de la Barbería Alura?</label>
       <input type="submit" id="submit" value="Enviar formulario" class="send">
     </form>
-    <table>
-      <thead>
-        <tr>
-          <th>Día</th>
-          <th>Horario</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Lunes</td>
-          <td>08h ~ 16h</td>
-        </tr>
-        <tr>
-          <td>Marte</td>
-        <td>08h ~ 20h</td>
-        </tr>
-        <tr>
-          <td>Miércoles</td>
-          <td>08h ~ 20h</td>
-        </tr>
-        <tr>
-          <td>jueves</td>
-          <td>08h ~ 20h</td>
-        </tr>
-        <tr>
-          <td>Viernes</td>
-          <td>07h ~ 22h</td>
-        </tr>
-        <tr>
-          <td>Sábado</td>
-          <td>07h ~ 22h</td>
-        </tr>
-        <tr>
-          <td>Domingo</td>
-          <td>07h ~ 19h</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
   </main>
   <footer>
     <img src="../src/img/logo-blanco.png" loading="lazy" alt="Logo de la Barbería Alura">
-    <p class="copyright">&copy Copyright Barbería Alura - 2023</p>
+    <p class="copyright">&copy; Copyright Barbería Alura - 2023</p>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
   <script src="../src/js/validation-contact.js"></script>
+  <script src="../src/js/intl-tel-input.js"></script>
 </body>
 
 </html>
