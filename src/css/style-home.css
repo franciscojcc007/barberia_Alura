@@ -95,6 +95,7 @@
     margin-top: 2rem;
 }
 
+
 /* Media Queries */
 @media (max-width: 768px) {
     .main-content {
@@ -126,6 +127,16 @@
 @media (max-width: 480px) {
     .title-main {
         font-size: 1.5em;
+    }
+
+    .iframe{
+        width: 90%;
+        height: 100%;
+        margin: 0 15px;
+    }
+
+    .img-differentials {
+        margin-left: 2%;
     }
 
     .main-content {
