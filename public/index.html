@@ -13,17 +13,23 @@
 </head>
 
 <body>
+  <script type="module" src="../src/index.js"></script>
   <header>
     <div class="box">
-      <h1><img src="../src/img/logo.png"></h1>
+      <img class="logo" src="../src/img/logo.png">
       <nav>
-        <ul>
-          <!-- <li><a href="index.html">Home</a></li> -->
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
           <li><a href="rendezvous.html">Reserva</a></li>
           <li><a href="service.html">Servicio</a></li>
-          <li><a href="product.html">Productos</a></li>
           <li><a href="contact.html">Contacto</a></li>
         </ul>
+        <!-- <p class="presentacion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, iste.</p> -->
       </nav>
     </div>
   </header>
@@ -82,7 +88,7 @@
         </ul><img src="../src/img/corte2.jpeg" loading="lazy" class="img-differentials">
       </div>
       <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/1d7d1cOq17k?si=Ms6hSxaZTOKTidlF"
+        <iframe class="iframe" src="https://www.youtube.com/embed/1d7d1cOq17k?si=Ms6hSxaZTOKTidlF"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
