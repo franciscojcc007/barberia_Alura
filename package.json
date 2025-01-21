@@ -15,7 +15,8 @@
     "intl-tel-input": "^25.2.1"
   },
   "devDependencies": {
-    "eslint": "^8.50.0"
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0"
   },
   "author": "Francisco Concepción",
   "license": "ISC"
