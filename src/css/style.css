@@ -124,7 +124,7 @@ footer {
 /* Media Queries */
 @media (max-width: 768px) {
     header {
-        height: 40vh;
+        height: 23dvh;
     }
 
     .logo{
@@ -161,6 +161,26 @@ footer {
 
     .menu.active {
         display: flex;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-content {
+        margin-top: 15px;
+    }
+
+    .list-icon {
+        margin: 7px 0;
+    }
+    
+    /* .clock{
+
+    } */
+    .list-info{
+        margin-top: 5px;
     }
 }
 
