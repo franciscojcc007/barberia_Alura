@@ -4,26 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Productos - Barbería Alura</title>
+  <meta name="description"
+    content="Barbería Alura, ubicada en el corazón de la ciudad, trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente.">
   <link rel="shortcut icon" href="../src/img/favaico.jpeg" type="image/x-icon">
   <link rel="stylesheet" href="../src/css/reset.css">
   <link rel="stylesheet" href="../src/css/style.css">
   <link rel="stylesheet" href="../src/css/style-product.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <title>Barbería Alura</title>
 </head>
 
 <body>
   <header>
-    <div class="box">
-      <h1><img src="../src/img/logo.png"></h1>
+    <div class="header-content">
+      <a class="home-links" href="index.html"><img class="logo" src="../src/img/logo.png"
+          alt="logo principal color negro"></a>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="service.html">Productos</a></li>
-          <li><a href="contact.html">Contacto</a></li>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu">
+          <!-- <li><a href="index.html">Home</a></li> -->
+          <li class="list"><a class="page-links" href="rendezvous.html">Reserva</a></li>
+          <li class="list"><a class="page-links" href="service.html">Servicio</a></li>
+          <li class="list"><a class="page-links" href="contact.html">Contacto</a></li>
         </ul>
+        <!-- <p class="presentacion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, iste.</p> -->
       </nav>
     </div>
   </header>
+
   <main>
     <ul class="cards">
       <a href="./contact.html"><li>
@@ -71,7 +83,22 @@
     </ul>
   </main>
   <footer>
-    <img src="../src/img/logo-blanco.png" loading="lazy">
+    <div class="footer-content">
+      <ul class="footer-info">
+        <li class="clock"><img src="../src/img/reloj.png"></li>
+        <li class="list-info">Horario de Atención</li>
+        <li class="list-info">lunes a viernes: 08:00 a.m - 9:00 p.m</li>
+        <li class="list-info">Sábados: 09:00 a.m - 08:00 p.m</li>
+        <li class="list-info">Domingo y festivos: 10:00 a.m - 06:00 p.m</li>
+      </ul>
+      <!-- <img src="../src/img/logo-blanco.png" loading="lazy"> -->
+      <ul class="social-media">
+        <li class="list-icon"><a href="#"><img src="../src/img/facebook.png" alt=""></a></li>
+        <li class="list-icon"><a href="#"><img src="../src/img/whatsapp.png" alt=""></a></li>
+        <li class="list-icon"><a href="#"><img src="../src/img/instagram.png" alt=""></a></li>
+        <li class="list-icon"><a href="#"><img src="../src/img/twitter.png" alt=""></a></li>
+      </ul>
+    </div>
     <p class="copyright">&copy Copyright Barbería Alura - 2023</p>
   </footer>
 </body>
